@@ -37,7 +37,7 @@ function Home() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setBannerImage(MobileBg);
+        setBannerImage(BannerImg);
       } else {
         setBannerImage(BannerImg);
       }
