@@ -1,0 +1,114 @@
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Slide Up Animation */
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade In Up Animation for Project Items */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Image Scale Animation */
+  @keyframes scaleIn {
+    from {
+      transform: scale(1.05);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply animations to elements */
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .slide-up {
+    animation: slideUp 1.2s ease-out forwards;
+  }
+  
+  .fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  /* Hide projects initially */
+  .invisible {
+    opacity: 0;
+  }
+  
+  /* Container for all projects */
+  .projects-container {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  /* Banner Content Animation */
+  .banner-content {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  
+  .banner-content.slide-up {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  /* Project Item Hover Effects */
+  .project-item {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    transition: transform 0.5s ease-out;
+  }
+  
+  .project-item:hover .project-image {
+    transform: scale(1.03);
+  }
+  
+  .project-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    transition: background 0.3s ease-out;
+  }
+  
+  .project-item:hover .project-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+  }
+  
+  .project-title {
+    transform: translateY(5px);
+    opacity: 0.9;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .project-item:hover .project-title {
+    transform: translateY(0);
+    opacity: 1;
+  }

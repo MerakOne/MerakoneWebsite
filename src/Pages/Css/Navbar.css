@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Against Regular";
+  src: url("../../../public//fonts/against\ regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.against {
+  font-family: "Against Regular", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 5;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.9s ease-out forwards;
+}
