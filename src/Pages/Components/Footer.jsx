@@ -41,11 +41,17 @@ function Footer() {
       
 
       
-        <div  className="md:w-1/3 mt-6 md:mt-0 montserrat">
+        <div  className="md:w-1/3 mt-6 md:ml-[-120px] md:mt-0 montserrat">
                 <h3 style={{color:'#2d3680'}} className="text-lg md:text-2xl font-bold text-gray-800 ">CONTACT US</h3>
                 <ul style={{color:'#2d3680' , letterSpacing:'2px'}} className="mt-2 space-y-2 md:ml-2 text-gray-600 text-sm md:text-lg">
                   <li> <p style={{color:'#2d3680'}} className="text-gray-800 font-semibold text-sm md:text-lg mt-3 montserrat">
                   Email: <a href="mailto:info@merakone.com" className="text-blue-500">info@merakone.com</a>
+                </p></li>
+                 <li> <p style={{color:'#2d3680'}} className="text-gray-800 font-semibold text-sm md:text-lg mt-3 montserrat">
+                 Phone : <a className="text-blue-500">00966545059009</a>
+                 <p style={{color:'#2d3680'}} className="text-gray-800 font-semibold text-sm md:text-lg md:ml-[55px]  montserrat">
+                  : <a className="text-blue-500">00966543669610</a>
+                </p>
                 </p></li>
                  
                 </ul>

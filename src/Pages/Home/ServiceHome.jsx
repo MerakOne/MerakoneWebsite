@@ -39,7 +39,7 @@ function ServiceHome() {
     className="rounded-lg w-full h-full object-cover"
   />
   <div className="absolute inset-0 flex items-center justify-center top-[50%]">
-    <p className="text-lg md:text-5xl font-semibold text-white against text-center px-4">
+    <p style={{letterSpacing:'3px'}} className="text-lg md:text-5xl font-semibold text-white against text-center px-4">
       Turnkey Fit-Out Solutions
     </p>
   </div>
@@ -53,7 +53,7 @@ function ServiceHome() {
     className="rounded-lg w-full h-full object-cover"
   />
   <div className="absolute inset-0 flex items-center justify-center top-[50%]">
-    <p className="text-lg md:text-5xl font-semibold text-white against text-center px-4">
+    <p style={{letterSpacing:'3px'}} className="text-lg md:text-5xl font-semibold text-white against text-center px-4">
       Custom Furniture and Fit-Out Solutions
     </p>
   </div>
@@ -67,7 +67,7 @@ function ServiceHome() {
     className="rounded-lg w-full h-full object-cover"
   />
   <div className="absolute inset-0 flex items-center justify-center top-[50%]">
-    <p className="text-lg md:text-5xl font-semibold text-white against text-center px-4">
+    <p style={{letterSpacing:'3px'}} className="text-lg md:text-5xl font-semibold text-white against text-center px-4">
       Office Design & Build
     </p>
   </div>
@@ -81,7 +81,7 @@ function ServiceHome() {
     className="rounded-lg w-full h-full object-cover"
   />
   <div className="absolute inset-0 flex items-center justify-center top-[50%]">
-    <p className="text-md 
+    <p style={{letterSpacing:'3px'}} className="text-md 
       md:text-5xl font-semibold text-white against  ] text-center px-4">
       Post-Opening Support
     </p>

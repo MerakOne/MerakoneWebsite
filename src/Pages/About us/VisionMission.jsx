@@ -27,9 +27,9 @@ function VisionMission() {
       >
      <div className="max-w-7xl w-full md:flex md:justify-between md:items-center">
   {/* Left Content */}
-  <div className="w-full p-5 md:w-full md:ml-[-20px]" style={{ color: "#2d3680" }}>
+  <div className="w-full md:w-full " style={{ color: "#2d3680" }}>
     <h1
-      className="text-5xl md:m-12 md:text-[3.5rem] md:ml-20 m-12"
+      className="text-5xl  md:text-[3.5rem]  "
       style={{ fontFamily: 'Against Regular, sans-serif' }}
       data-aos="fade-down"
     >
@@ -38,7 +38,7 @@ function VisionMission() {
 
     <p
     style={{letterSpacing:'2px'}}
-      className="md:w-full md:mt-7 mt-4 text-3xl md:text-2xl montserrat md:mx-[70px]"
+      className="md:w-full md:mt-7 text-3xl md:text-2xl montserrat"
       data-aos="fade-up"
     >
       To be the most trusted <strong>interior fit-out partner</strong> globally, transforming every client’s
@@ -48,7 +48,7 @@ function VisionMission() {
     </p>
 
     <h1
-      className="text-5xl md:text-[3.5rem] md:ml-20 md:m-12 m-12"
+      className="text-5xl md:text-[3.5rem] mt-8"
       style={{ fontFamily: 'Against Regular, sans-serif' }}
       data-aos="fade-down"
     >
@@ -57,7 +57,7 @@ function VisionMission() {
 
     <p
     style={{letterSpacing:'2px'}}
-      className="mt-4 md:w-full text-3xl md:text-2xl montserrat md:mx-[70px]"
+      className="mt-4 md:w-full text-3xl md:text-2xl montserrat mt-10"
       data-aos="fade-up"
     >
       MerakOne turns our clients’ visions into reality by delivering <strong>turnkey fit-out solutions,
@@ -69,13 +69,13 @@ function VisionMission() {
   </div>
 
   {/* Right Image */}
-  <div className="w-full md:w-auto flex flex-col items-end mt-10 gap-4">
-    <div data-aos="zoom-in-up">
+ <div className="w-full md:w-auto flex flex-col items-end md:ml-60 mt-10 gap-8">
+    <div data-aos="zoom-in-up" className="w-full md:max-w-[950px]">
       <img
         src={Image1}
         alt="Interior Design"
         loading="lazy"
-        className="w-full md:w-[850px] h-auto md:ml-80 rounded-lg shadow-lg"
+        className="w-full h-auto rounded-lg shadow-lg"
       />
     </div>
   </div>
