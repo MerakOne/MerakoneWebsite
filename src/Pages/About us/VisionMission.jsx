@@ -69,6 +69,7 @@ function VisionMission() {
   </div>
 
   {/* Right Image */}
+
  <div className="w-full md:w-auto flex flex-col items-end md:ml-60 mt-10 gap-8">
     <div data-aos="zoom-in-up" className="w-full md:max-w-[950px]">
       <img
@@ -79,6 +80,7 @@ function VisionMission() {
       />
     </div>
   </div>
+  
 </div>
 
       </div>

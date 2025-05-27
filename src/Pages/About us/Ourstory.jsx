@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BannerImg from "../../Assets/Aboutus/Ourstory.jpg";
 import Image1 from "../../Assets/Aboutus/ContentImg.png";
+import Image2 from "../../Assets/Aboutus/ContentImg.png"; // Add your second image here
 
 function Ourstory() {
   useEffect(() => {
@@ -30,9 +31,8 @@ function Ourstory() {
         data-aos="fade-in"
         data-aos-duration="1500"
       >
-        <div
-          className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between relative gap-10"
-        >
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between relative gap-10">
+          
           {/* Left Side - Text Content */}
           <div className="w-full md:w-1/2 text-left">
             <h1
@@ -44,7 +44,7 @@ function Ourstory() {
               Our Story
             </h1>
 
-            <p
+               <p
               style={{ color: "#2d3680", letterSpacing: '1.5px' }}
               className="text-base sm:text-lg md:text-2xl leading-relaxed montserrat mt-8 sm:mt-12 p-2 sm:p-5"
               data-aos="fade-right"
@@ -69,7 +69,7 @@ function Ourstory() {
               Experience & Passion
             </h1>
 
-            <p
+                  <p
               style={{ color: "#2d3680", letterSpacing: '1.5px' }}
               className="text-base sm:text-lg md:text-2xl leading-relaxed mt-6 sm:mt-8 md:mt-6 p-2 sm:p-5"
               data-aos="fade-right"
@@ -86,19 +86,35 @@ function Ourstory() {
             </p>
           </div>
 
-          {/* Right Side - Image */}
-          <div
-            className="w-full md:w-1/2 flex justify-center md:justify-end items-center md:mt-24"
-            data-aos="fade-left"
-            data-aos-delay="400"
-            data-aos-duration="1200"
-          >
-            <img
-              loading="lazy"
-              src={Image1}
-              alt="Interior Design"
-              className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[550px] h-auto rounded-lg shadow-lg"
-            />
+          {/* Right Side - Images */}
+          <div className="w-full md:w-1/2 flex flex-col items-center md:items-end gap-12 md:mt-24">
+            {/* Image for Our Story */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-duration="1200"
+            >
+              <img
+                loading="lazy"
+                src={Image1}
+                alt="Interior Design Our Story"
+                className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[550px] h-auto rounded-lg shadow-lg"
+              />
+            </div>
+
+            {/* Image for Experience & Passion */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="800"
+              data-aos-duration="1200"
+            >
+              <img
+                loading="lazy"
+                src={Image2}
+                alt="Interior Design Experience"
+                className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[550px] h-auto rounded-lg shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
