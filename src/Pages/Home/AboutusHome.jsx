@@ -22,23 +22,22 @@ function Aboutus() {
       <div className='md:flex md:justify-between md:items-center w-full'>
         <div className='w-full md:w-2/3 md:pr-8  md:ml-[158px]'>
           <h1 className='md:ml-20 mt-12  text-5xl md:text-7xl' style={{fontFamily: 'Against Regular, sans-serif' }}>About Us</h1>
-          <p  className='md:mt-20 mt-10 md:text-2xl  montserrat md:ml-[70px] md:mr-[70px]' style={{ marginBottom: '1rem' }}>
-          At <strong>MerakOne</strong>, we transform visions into reality through exceptional interior fit-out
-          solutions across Saudi Arabia and Bahrain. Specializing in <strong>Luxury Retail, Retail, Food
-          and Beverages, Commercial Workplaces, and Residential</strong> sectors, we deliver
-          bespoke interiors that blend aesthetics, functionality, and innovation. Our
-          commitment to quality and precision ensures every project reflects our clients’
-          unique aspirations while meeting the highest industry standards.
-          </p>
-          <p className='md:text-2xl  montserrat md:ml-[70px] md:mr-[70px]' style={{ marginBottom: '2rem' }}>
-          A cornerstone of our capability is our <strong>1,000 sq. meter state-of-the-art furniture and
-          fittings factory in Riyadh.</strong> This well-equipped facility empowers us to craft custom
-          joinery solutions, offering unparalleled flexibility and control to meet our clients’
-          specific requirements. From intricate luxury retail displays to ergonomic commercial
-          workspaces, our in-house manufacturing ensures seamless execution and timely
-          delivery.          </p>
+        <p 
+  className="md:mt-20 mt-10 md:text-2xl montserrat md:ml-[70px] md:mr-[70px]" 
+  style={{ marginBottom: '1rem', textAlign: 'justify' }}
+>
+  At <strong>MerakOne</strong>, we transform visions into reality through exceptional interior fit-out
+  solutions across Saudi Arabia and Bahrain. Specializing in <>Luxury Retail, Retail, Food
+  and Beverages, Commercial Workplaces, and Residential</> sectors, we deliver
+  bespoke interiors that blend aesthetics, functionality, and innovation. Our
+  commitment to quality and precision ensures every project reflects our clients’
+  unique aspirations while meeting the highest industry standards.
+</p>
+
+       
          <a href="/about_us"> 
-         <button className='mt-24 ml-24 mb-5' style={{
+     <div className='flex justify-center'>
+          <button className='mt-12  ml-24 mb-12' style={{
             backgroundColor: '#2d3680',
             color: '#fff',
             padding: '0.5rem 2rem',
@@ -49,6 +48,7 @@ function Aboutus() {
           }}>
             LEARN MORE
           </button>
+     </div>
           </a>
         </div>
         <div className='w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0'>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import BannerImg from '../../Assets/Homepage/Asset2.png';
-import MobileBg from '../../Assets/Aboutus/MobileBg.jpg';
 import Aboutus from './AboutusHome';
 import ServiceHome from './ServiceHome';
 import CandBHome from './CandBHome';
@@ -16,7 +15,6 @@ function Home() {
   const [fadeOut, setFadeOut] = useState(false);
   const [bannerImage, setBannerImage] = useState(BannerImg);
 
-  // Handle AOS and loading screen
   useEffect(() => {
     AOS.init({
       duration: 3000,
@@ -88,7 +86,7 @@ function Home() {
 </p>
 
               </h2>
-              <div className='flex justify-center'>
+              <div className='flex justify-center mb-12'>
                 <button
                   className="absolute md:mt-24"
                   style={{

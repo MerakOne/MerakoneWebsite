@@ -216,34 +216,7 @@ function CandBHome() {
   className=""
   data-aos="fade-up"
 >
-  <div className="relative flex items-center justify-center min-auto mb-24 md:mb-1">
-    <div className=""></div>
 
-    <div 
-      style={{ color: '#2d3680' }} 
-      className="relative m-12 text-center md:m-48 px-6 max-w-6xl"
-      data-aos="zoom-in"
-      data-aos-delay="300"
-    >
-      <h1 
-        className="text-2xl md:text-6xl w-full against font-bold text-primary font-elegant"
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        Client-Centric Approach
-      </h1>
-      <p 
-        className="mt-12 text-lg md:text-2xl text-start max-w-6xl montserrat"
-        data-aos="fade-up"
-        data-aos-delay="600"
-        style={{letterSpacing:'2px'}}
-      >
-        A client-centric approach is a business strategy that prioritizes the needs, preferences, and expectations of clients
-        at every stage of interaction. It involves understanding their unique requirements, providing personalized solutions,
-        and ensuring exceptional service to build long-term relationships.
-      </p>
-    </div>
-  </div>
 </div>
 
     </div>

@@ -33,13 +33,15 @@ function HomeProject() {
   }
 
   return (
+    <div>
+
     <div className="text-center py-12 bg-[#474e92] text-white md:mt-0" data-aos="fade-up">
       <h2 className="text-4xl md:text-6xl font-bold mb-4 mt-5 against" data-aos="fade-down">
         Projects
       </h2>
 
     <div className='md:flex md:items-center md:justify-center'>
-    <p style={{letterSpacing:'2px'}} className="text-lg p-4 md:text-2xl md:flex md:items-center md:max-w-4xl md:mb-0 mb-12 montserrat md:mt-5 " data-aos="fade-up" data-aos-delay="200">
+    <p style={{ letterSpacing: '2px', textAlign: 'justify' }} className="text-lg p-4 md:text-2xl md:flex md:items-center md:max-w-4xl md:mb-0 mb-12 montserrat md:mt-5 " data-aos="fade-up" data-aos-delay="200">
         We believe in turning ideas into reality through innovation and precision. Our portfolio showcases a diverse range of projects, from dynamic web applications to seamless user experiences.
       </p>
     </div>
@@ -127,7 +129,39 @@ function HomeProject() {
           </button>
         </a>
       </div>
+
+      
     </div>
+    <div className="relative flex items-center justify-center min-auto mb-24 md:mb-1">
+    <div className=""></div>
+
+    <div 
+      style={{ color: '#2d3680' }} 
+      className="relative m-12 text-center md:m-48 px-6 max-w-6xl"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
+      <h1 
+        className="text-2xl md:text-6xl w-full against font-bold text-primary font-elegant"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        Client-Centric Approach
+      </h1>
+   <p 
+  className="mt-12 text-lg md:text-2xl max-w-6xl montserrat"
+  data-aos="fade-up"
+  data-aos-delay="600"
+  style={{ letterSpacing: '2px', textAlign: 'justify' }}
+>
+  A client-centric approach is a business strategy that prioritizes the needs, preferences, and expectations of clients
+  at every stage of interaction. It involves understanding their unique requirements, providing personalized solutions,
+  and ensuring exceptional service to build long-term relationships.
+</p>
+
+    </div>
+  </div>
+  </div>
   );
 }
 

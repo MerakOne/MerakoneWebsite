@@ -7,26 +7,23 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="absolute top-0 left-0 w-full z-50  md:mt-12">
-        <div className="flex justify-between mx-auto">
-          {!isOpen && (
-            <a href="/" className="flex">
-             <div className=''>
-             <img
-                src={Logo}
-                alt="Merak One Logo"
-                className="ml-10 mt-5 md:mt-0 h-10 max-w-auto  md:ml-[90px] md:max-w-[250px] md:h-auto object-contain"
-              />
-             </div>
-            </a>
-          )}
+      <nav className="absolute top-0 left-0 w-full z-50 md:mt-12">
+        <div className="flex justify-between items-center mx-auto">
+          {/* Logo */}
+          <a href="/" className="flex">
+            <img
+              src={Logo}
+              alt="Merak One Logo"
+              className="ml-6 mt-5 md:mt-0 h-10 md:h-auto md:ml-[90px] md:max-w-[250px] object-contain"
+            />
+          </a>
 
           {/* Mobile Toggle Button */}
           <button
             style={{ margin: '10px', backgroundColor: '#2d3680' }}
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 md:rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 ${
+            className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 ${
               isOpen ? 'absolute top-4 right-4 z-50' : ''
             }`}
             aria-expanded={isOpen}
@@ -49,72 +46,62 @@ function Navbar() {
             </svg>
           </button>
 
-          {/* Mobile / Desktop Menu */}
-          <div
-            style={{ color: '#2d3680' }}
-            className={`${
-              isOpen ? 'block' : 'hidden'
-            } p-4 w-full md:block md:ml-[80px] bg-[#2d3680] md:ml-24 md:w-auto md:rounded-l-[50px]`}
+          {/* Menu */}
+      <div
+  style={{ color: '#2d3680' }}
+  className={`${
+    isOpen ? 'block' : 'hidden'
+  } md:block`}
+>
+  {/* Desktop Menu */}
+  <div className="hidden md:flex md:bg-[#2d3680] md:rounded-l-[50px] md:px-8 md:py-4">
+    <ul className="flex flex-col md:flex-row md:space-x-12 items-center md:mt-0 montserrat">
+      {[
+        { name: 'Home', link: '/' },
+        { name: 'About Us', link: '/about_us' },
+        { name: 'Services', link: '/services' },
+        { name: 'Clients', link: '/clients' },
+        { name: 'Projects', link: '/projects' },
+        { name: 'Careers', link: '/careers' },
+        { name: 'Contact Us', link: '/contact_us' },
+      ].map(({ name, link }) => (
+        <li key={name}>
+          <a
+            href={link}
+            className="block py-2 px-3 text-white md:rounded-sm hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-300 md:text-lg whitespace-nowrap"
           >
-            <ul className="font-large md:flex md:justify-center md:items-center md:w-full flex flex-col border md:ml-12 border-gray-100 md:rounded-lg md:flex-row md:space-x-20 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-blue-800 md:p-0 montserrat">
-              <li>
-                <a
-                  href="/"
-                  className="block py-2 px-3 text-white md:rounded-sm md:bg-transparent md:text-white md:p-0 dark:text-white md:text-lg"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about_us"
-                  className="block py-2 px-3 text-white md:rounded-sm hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-300 md:text-lg whitespace-nowrap"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/services"
-                  className="block py-2 px-3 text-white md:rounded-sm hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-300 md:text-lg"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/clients"
-                  className="block py-2 px-3 text-white md:rounded-sm hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-300 md:text-lg"
-                >
-                  Clients
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/projects"
-                  className="block py-2 px-3 text-white md:rounded-sm hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-300 md:text-lg"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/careers"
-                  className="block py-2 px-3 text-white md:rounded-sm hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-300 md:text-lg"
-                >
-                  Careers
-                </a>
-              </li>
-              <li className="pr-20">
-                <a
-                  href="/contact_us"
-                  className="block py-2 px-3 text-white md:rounded-sm hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-300 md:p-0 dark:text-white md:dark:hover:text-blue-300 md:text-lg mr-32 whitespace-nowrap"
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
+            {name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {/* Mobile Menu */}
+  {isOpen && (
+    <div className="absolute top-0 left-0 w-full bg-[#2d3680] p-3 flex flex-col space-y-2 md:hidden z-40">
+      {[
+        { name: 'Home', link: '/' },
+        { name: 'About Us', link: '/about_us' },
+        { name: 'Services', link: '/services' },
+        { name: 'Clients', link: '/clients' },
+        { name: 'Projects', link: '/projects' },
+        { name: 'Careers', link: '/careers' },
+        { name: 'Contact Us', link: '/contact_us' },
+      ].map(({ name, link }) => (
+        <a
+          key={name}
+          href={link}
+          className="block py-2 px-4 text-white rounded hover:bg-blue-700 text-lg"
+          onClick={() => setIsOpen(false)} // close menu on link click
+        >
+          {name}
+        </a>
+      ))}
+    </div>
+  )}
+</div>
+
         </div>
       </nav>
     </div>
